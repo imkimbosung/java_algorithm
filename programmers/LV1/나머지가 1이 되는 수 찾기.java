@@ -1,23 +1,22 @@
 
 /**
- * 틀린 부분이 많아 다시 풀어봐야함
+ * 다른 풀이 생각해보자
  * 
  */
 
 public class Solution {
     
-class solution {
-    public int solution(int n) {
-        int answer = 0;
-        double tmp = Math.sqrt(n-1);
-        
-        if(tmp == (int)tmp){
-            answer = (int)tmp;    
-        }else{
-            answer = n-1;
+    class Solution {
+        public int solution(int n) {
+            int answer = 0;
+            
+            for(int i = 2 ; i < n ; i++){
+                if(n % i == 1){
+                    return i;
+                }
+            }
+            
+            return answer;
         }
-        
-        return answer;
     }
-}
 }
