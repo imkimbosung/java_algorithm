@@ -15,11 +15,8 @@ class Solution {
             for(int i=0; i < arrLength; i++){
                 if(min == arr[i]){continue;}
                 answer[p++] = arr[i];
-            }
-            
+            }   
             return answer;
         }
-        
-        
     }
 }
