@@ -23,4 +23,21 @@ public class 약수의개수와덧셈 {
         }
         return cntDvs;
     }
+
+
+    /**
+     *  아래는 실재로 약수개수를 구하는 함수이다. 그런데 입출력 예시는 성공하였지만 채첨에서는 전부 실패가 되었다....
+     * 이유를 모르겠다
+     */
+    private int getDivisor2(int inValue){
+        int cntDvs = 0;
+        int i = 1;
+        for( ; i*i < inValue ; i++ ){
+            if(inValue % i == 0){
+                cntDvs+=2;
+            }
+        }
+        if(inValue % i*i == 0){cntDvs++;}
+        return cntDvs;
+    }
 }
