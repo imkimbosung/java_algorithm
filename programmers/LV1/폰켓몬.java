@@ -5,7 +5,7 @@ public class 폰켓몬 {
         int answer = 0;
         int maxChoice = nums.length / 2;
         HashMap<String, String> tmpMap = new HashMap<>();
-        
+        // 중복은 map으로 풀자
         for(int tmpVal : nums){
             if(answer == maxChoice){
                 break;
