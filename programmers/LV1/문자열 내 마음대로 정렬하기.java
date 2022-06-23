@@ -3,6 +3,7 @@ public class 문자열 내 마음대로 정렬하기 {
     public String[] solution(String[] strings, int n) {
 
         for(int i = 0 ; i < strings.length-1 ; i++){
+            
             String tmp = "";
             for(int j = i +1 ; j < strings.length; j++){
                 if(strings[i].charAt(n) > strings[j].charAt(n)){
