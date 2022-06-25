@@ -10,6 +10,7 @@ public class 폰켓몬 {
             if(answer == maxChoice){
                 break;
             }
+            // 있으면 T 없으면 F
             if(tmpMap.getOrDefault(tmpVal+"", "F").equals("F")){
                 tmpMap.put(tmpVal+"", "T");
                 answer++;
