@@ -13,7 +13,6 @@ public class Main {
       // 마지막 정의
       if(startNum == 100) {
          return 0;
-      
       // 홀수일때만 합산   
       }else if(startNum % 2 == 1) {
          return startNum + recursionSum(++startNum);
