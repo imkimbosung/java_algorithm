@@ -2,11 +2,12 @@ public class 3진법 뒤집기 {
     public int solution(int n) {
         int x = 0;
         int y = 0;
-        if(n == 1){
-            return 1;
-        }
-        String calResult = "";
         
+        if(n == 1){ return 1;}
+        
+        String calResult = ""; // 계산결과 변수
+        
+        // 3진법으로 변환
         while(true){
             x = n/3;
             y = n%3;
